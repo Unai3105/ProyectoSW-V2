@@ -1,0 +1,90 @@
+<% include partials/header.ejs %>
+
+
+<form action="/api/v1/players" method="post">
+    <label for="id">Id</label>
+    <input type="number" name="id" id="id" required>
+    <input type="submit" value="Visualizar jugador" />
+</form>
+<br>
+<form action="/api/v1/delete" method="delete">
+    <label for="id">Id</label>
+    <input type="number" name="delete_id" id="id" required>
+    <input type="submit" value="Eliminar jugador" />
+</form>
+<br>
+<form action="/api/v1/add" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="create_name" id="create_name">
+
+    <label for="firstname">Firstname</label>
+    <input type="text" name="firstname" id="firstname" required>
+
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" id="lastname" required>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" required>
+
+    <label for="birth_date">Birth date</label>
+    <input type="text" name="birth_date" id="birth_date" required>
+
+    <label for="birth_place">Birth place</label>
+    <input type="text" name="birth_place" id="birth_place">
+
+    <label for="birth_country">Birth country</label>
+    <input type="text" name="birth_country" id="birth_country">
+
+    <label for="nationality">Nationality</label>
+    <input type="text" name="nationality" id="nationality">
+
+    <label for="height">Height (in cm)</label>
+    <input type="text" name="height" id="height">
+
+    <label for="weight">Weight (in kg)</label>
+    <input type="text" name="weight" id="weight">
+
+    <label for="injured">¿Injured?</label>
+    <input type="text" name="injured" id="injured">
+
+    <input type="submit" value="Añadir jugador" />
+</form>
+<br>
+<form action="/api/v1/update" method="put">
+    <label for="name">Name</label>
+    <input type="text" name="create_name" id="create_name">
+
+    <label for="firstname">Firstname</label>
+    <input type="text" name="firstname" id="firstname">
+
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" id="lastname">
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+
+    <label for="birth_date">Birth date</label>
+    <input type="text" name="birth_date" id="birth_date">
+
+    <label for="birth_place">Birth place</label>
+    <input type="text" name="birth_place" id="birth_place">
+
+    <label for="birth_country">Birth country</label>
+    <input type="text" name="birth_country" id="birth_country">
+
+    <label for="nationality">Nationality</label>
+    <input type="text" name="nationality" id="nationality">
+
+    <label for="height">Height (in cm)</label>
+    <input type="text" name="height" id="height">
+
+    <label for="weight">Weight (in kg)</label>
+    <input type="text" name="weight" id="weight">
+
+    <label for="injured">¿Injured?</label>
+    <input type="text" name="injured" id="injured">
+
+    <input type="submit" value="Modificar jugador" />
+</form>
+
+<% include partials/footer.ejs %>

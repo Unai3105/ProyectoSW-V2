@@ -1,0 +1,17 @@
+<% include partials/header.ejs %>
+
+<h1> Jugador </h1>
+
+<ul>
+    <li><%= player['firstname']%></li>
+    <li><%= player['lastname']%></li>
+    <li><%= player['age']%></li>
+    <li><%= player['birth']['date']%></li>
+    <li><%= player['birth']['place']%></li>
+    <li><%= player['birth']['country']%></li>
+    <li><%= player['height']%></li>
+    <li><%= player['weight']%></li>
+    <li><%= player['injured']%></li>
+</ul>
+
+<% include partials/footer.ejs %>
