@@ -3,15 +3,15 @@
 <h1> Jugador </h1>
 
 <ul>
-    <li><%= player['firstname']%></li>
-    <li><%= player['lastname']%></li>
-    <li><%= player['age']%></li>
-    <li><%= player['birth']['date']%></li>
-    <li><%= player['birth']['place']%></li>
-    <li><%= player['birth']['country']%></li>
-    <li><%= player['height']%></li>
-    <li><%= player['weight']%></li>
-    <li><%= player['injured']%></li>
+    <li>Name = <%= player.name%></li>
+    <li>Birth date = <%= player.birthdate%></li>
+    <li>Nationality = <%= player.nationality%></li>
+    <li>TeamID = <%= player.teamId%></li>
+    <li>position = <%= player.position%></li>
+    <li>number = <%=player.number%></li>
+    <li>LeagueID = <%= player.leagueId%></li>
 </ul>
-
+<br>
+<br>
+<a href="/admin">Volver al panel de administración</a>
 <% include partials/footer.ejs %>

@@ -4,14 +4,23 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var expressValidator = require('express-validator');
+const session = require('express-session');
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('./routes');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+
+const sess = {
+  secret: 'xrtcfgyhbjn',
+  cookie: {}    
+}
+
+app.use(session(sess));
 
 app.use(logger('dev'));
 app.use(express.json());
